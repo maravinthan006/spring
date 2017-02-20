@@ -8,7 +8,6 @@
 </head>
 <body>
 <center><h2>Shopping Cart</h2></center>
-<center> ${loginMessege} </center>
 <hr>
 <br>
 <form action="validate">

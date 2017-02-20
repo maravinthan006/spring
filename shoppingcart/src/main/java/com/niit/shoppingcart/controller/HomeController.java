@@ -1,8 +1,8 @@
 package com.niit.shoppingcart.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -35,17 +35,17 @@ mv.addObject("isUserClickedRegister", "true");
 return mv;
 }
 @RequestMapping("validate")
-public ModelAndView validateCredentials(@RequestAttribute("userID") String id,
-@RequestAttribute("password") String pwd)
+public ModelAndView validateCredentials(@RequestParam("user") String id,
+@RequestParam("password") String pwd)
 {
 ModelAndView  mv = new ModelAndView("/home");
 if(id.equals("niit") && pwd.equals("niit@123"))
 {
-mv.addObject("msg", "Valid Credentials");
+mv.addObject("loginmsg", "Valid Credentials");
 }
 else
 {
-mv.addObject("msg", "Invalid Credentials...please try again");
+mv.addObject("loginmsg", "Invalid Credentials...please try again");
 }	
 return mv;
 }
