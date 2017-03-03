@@ -4,18 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>LoginPage</title>
+<title>Login</title>
 </head>
 <body>
-<center><h2>Shopping Cart</h2></center>
-<hr>
-<br>
+<center><h2><b>Login Page</b></h2></center>
 <form action="validate">
-User Name:<input type="text" name="user"></input>
-Password:<input type="password" name="password"></input>
- <br>
-<input type="submit" value="Login">
-<input type="reset" value="Reset">
+<center>
+<label><b>Username</b></label><br>
+ <input type="text" name="username"> <br>
+<label><b>Password</b></label><br>
+<input type="password" name="password"> <br>
+<input type="submit" value="Login"> <br>
+</center>
 </form>
 </body>
 </html>

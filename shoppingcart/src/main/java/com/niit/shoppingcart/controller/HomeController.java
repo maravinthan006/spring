@@ -26,14 +26,6 @@ ModelAndView mv = new ModelAndView("/login");
 mv.addObject("isUserClickedLogin","true" );
 return mv;
 }
-@RequestMapping("register")
-public ModelAndView showRegistrationpage()
-{
-System.out.println("Clicked on Registration link");
-ModelAndView mv=new ModelAndView("/register");
-mv.addObject("isUserClickedRegister", "true");
-return mv;
-}
 @RequestMapping("validate")
 public ModelAndView validateCredentials(@RequestParam("user") String id,
 @RequestParam("password") String pwd)

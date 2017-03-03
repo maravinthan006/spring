@@ -7,10 +7,25 @@
 <title>Register</title>
 </head>
 <body>
-This is a Registration page
-<br>
-username<input type="text"><br>
-password<input type="password"><br>
-<input type="submit" value="Register">
+<form action="register" method="post">
+    <label><b>Name</b></label>
+    <input type="text" name="name"><br>
+  
+    <br><label><b>UserName</b></label>
+    <input type="text" name="username"/><br>
+    
+     <br><label><b>Password</b></label>
+    <input type="password" name="password"/> <br>
+    
+    <br><label><b>Address</b></label> 
+    <input type="text" name="address"/><br>
+    
+     <br><label><b>EmailId</b></label>
+    <input type="text" name="email"><br>
+    
+     <input type="submit" value="Submit">
+    
+  </form>
+ 
 </body>
 </html>
